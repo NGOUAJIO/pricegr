@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.text {
+    margin-top: 2rem;
+}
+
+.header {
+    padding: 20px;
+    padding-left: 50px;
+    height: 40vh;
+}
+
+.header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 50px;
+}
+
+.header .guarantee {
+    color: #adff2f;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    height: 60vh;
+}
+
+.subscription-details,
+.why-us {
+    padding: 20px;
+    flex: 1;
+}
+
+.subscription-details {
+    background-color: hsl(185, 100%, 28%);
+    text-align: center;
+}
+
+.subscription-details h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.subscription-details button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 80px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.subscription-details button:hover {
+    background-color: hsl(71, 73%, 54%);
+}
+
+.why-us {
+    background-color: #00acc1;
+}
+
+.why-us h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.why-us ul {
+    list-style-type: none;
+}
+
+.why-us ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .header {
+        height: 60vh;
+    }
+
+    .subscription {
+        flex-direction: column;
+        border-radius: 30px 30px 0 0;
+        height: auto;
+    }
+
+    .subscription-details,
+    .why-us {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscription-details {
+        border-radius: 30px 30px 0 0;
+        padding: 20px;
+    }
+
+    .why-us {
+        padding: 20px;
+    }
+}
